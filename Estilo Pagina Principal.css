@@ -1,0 +1,115 @@
+body {
+    background: #D04C2F;
+    /*background-attachment:scroll para que el fondo se quede fijo aunque el usuario suba y baje la pagina*/
+    color: #fff;
+    /*background-attachment:fixed para que el fondo se mueva al mismo tiempo que sube y baja el usuario*/
+}
+
+
+/*si quiero poner una imagen de fondo ahi que poner background:url(ruta de la imagen)*/
+
+header div img {
+    text-align: auto;
+}
+
+h1 {
+    /*background-repeat:no-repeat para no repetir imagen de fondo*/
+    font-size: 50px;
+    /*Font-size sirve para cambiear el tamaño de las letras (px= pixeles*/
+    margin: 20px 10px;
+    width: 500px;
+    color: orange;
+    /*display funciona para poner inline-block que los pone en linea*/
+    position: relative;
+    /*box-shadow permite agregarle una sombra a los elementos 0px 5px 0px #color*/
+    right: auto;
+    /*padding sirve para que el color del fondo cambien tanto en ancho como en alto*/
+}
+
+header {
+    background: #A4280D;
+    width: 60%;
+    height: 219px;
+    padding: 30px;
+}
+
+header a {
+    /*:active sirve para saber que va a pasar cuando el usuario le de click al link*/
+    color: 30E21A;
+    text-decoration: none;
+    /*:visited sirve para ver como va a quedar el link despues de a ver sido usado alguna vez*/
+    font-size: 2em;
+    /*1em corresponde a la cantida de pixeles del codigo de arriba y rem*/
+    box-shadow: 0px 5px 0px #35A128;
+    background: #4BC53C;
+    padding: 10px 15px;
+}
+
+
+/*width=ancho, utilizar mayormente en porcentaje %*/
+
+header a:hover {
+    box-shadow: 0px 2px 0px #35A128;
+    background: #AE3217;
+}
+
+header a:active {
+    /*overflow:hidden para ocultar elc ontenido que sobrepasa nuestro contenedor y otra funcion es limpiar los float*/
+    box-shadow: none;
+    color: FFF;
+}
+
+article p {
+    position: relative;
+    /*position:fixed; funciona para que se mueva con el scroll de la pagina*/
+    width: 400px;
+    /*position:static; nula cualquier modificacion de top, button, left y right*/
+    top: 0;
+    /*con :hover podes modificar el link cuando pase el mouse por arriba*/
+    bottom: 0;
+    /*float sirve para poner todas las cajas o para la left o right*/
+    right: 0;
+    /*Con :link podes cambiar cosas del link que todavia no hayas visitado, no se usa casi nunca*/
+    left: 0;
+    /*clear-both anula las caracteristicas puestas en ese comando (como para separar textos de al lado de una imagen)*/
+}
+
+section img {
+    float: right;
+    border: 5px solid #7C2700;
+    position: relative;
+    /*text-transform / letter-spacing /word-spacing*/
+    top: 0;
+    /*text-shadow agregar sombra al texto*/
+    bottom: 0;
+    /*text-decoration para decorar los textos (line-through)*/
+    right: 0;
+    /*border-radius para redondear el brode de la imagen*/
+    left: 0;
+    /*font-family para elegir tipografia de letra*/
+    border-radius: 7px;
+    /*para poner sombra a la imagen respetando el bordeado si es que hay*/
+}
+
+.main {
+    padding: 10px 15px;
+    /*line-height para modificar el interlineado*/
+    background: #FC7355;
+    width: 830px;
+}
+
+
+/*text-align para mover los texto o imagen o a la izquierda o derecha o centro*/
+
+.ParrafoDos {
+    padding: 10px 15px;
+    background: #FF532E;
+    width: 830px;
+}
+
+
+/** {
+    /*margin permite agregar margen y padding es un margen interno
+
+
+}*/
